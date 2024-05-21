@@ -2,10 +2,9 @@ version: 2
 
 formats:
   - epub
-  - htmlzip
 
 sphinx:
-  configuration: docs/conf.py
+  configuration: configuration: source/conf.py
 
   # Disabled due to temporary issue with Django docs
   fail_on_warning: false
