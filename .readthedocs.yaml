@@ -4,7 +4,7 @@ formats:
   - epub
 
 sphinx:
-  configuration: configuration: source/conf.py
+  configuration: source/conf.py
 
   # Disabled due to temporary issue with Django docs
   fail_on_warning: false
