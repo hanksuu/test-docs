@@ -157,6 +157,7 @@ tornado==6.4
 urllib3==2.2.1
     # via requests
 sphinx_markdown_tables
+sphinx-rtd-theme
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
