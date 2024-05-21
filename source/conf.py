@@ -16,7 +16,7 @@ release = 'v0.1'
 
 extensions = [
     'sphinx_markdown_tables',
-    'sphinx-rtd-theme'
+    'sphinx_rtd_theme'
 ]
 
 templates_path = ['_templates']
