@@ -1,0 +1,27 @@
+name: build test-docs
+
+on:
+    pull_request:
+
+jobs:
+    task:
+        runs-on: ubuntu-latest
+        timeout-minutes: 10
+        steps:
+            - name: checkout to main branch
+              uses: actions/checkout@v3
+              with:
+                  ref: ${{ github.event.pull_request.head.sha }}
+                  path: test-docs
+
+            - name: Install python package
+              run: |
+                    apt update && apt install sudo
+                    sudo apt-get install -y python3 python3-pip
+                    pip3 install Sphinx
+                    pip3 install sphinx_rtd_theme recommonmark sphinx_markdown_tables                    
+
+            - name: make html
+              run: |
+                cd test-docs
+                make html
