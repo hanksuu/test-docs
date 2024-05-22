@@ -4,7 +4,7 @@ on:
     pull_request:
 
 jobs:
-    task:
+    build:
         runs-on: ubuntu-latest
         timeout-minutes: 10
         steps:
