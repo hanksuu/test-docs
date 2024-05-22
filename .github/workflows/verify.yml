@@ -1,7 +1,6 @@
 name: build test-docs
 
 on:
-    push:
     pull_request:
 
 jobs:
@@ -22,7 +21,7 @@ jobs:
                     pip3 install Sphinx
                     pip3 install sphinx_rtd_theme recommonmark sphinx_markdown_tables                    
 
-            - name: Run CGI script
+            - name: make html
               run: |
                 cd test-docs
                 make html
