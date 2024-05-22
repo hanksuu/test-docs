@@ -15,9 +15,6 @@ jobs:
                   ref: ${{ github.event.pull_request.head.sha }}
                   path: test-docs
 
-            - name: Set up python
-              uses: https://github.com/actions/setup-python@v4
-
             - name: Install python package
               run: |
                     apt update && apt install sudo
